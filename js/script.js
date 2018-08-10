@@ -11,3 +11,5 @@ const swiperH = new Swiper(".swiper-container-h",{
 	direction:"horizontal",
 	allowTouchMove:false,
 });
+
+swiperH.slideTo(0);

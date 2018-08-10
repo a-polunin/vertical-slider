@@ -12,22 +12,42 @@
   <link rel = "stylesheet" href = "./css/swiper.css"> 
  </head>
  <body> 
+		
 	<div class="swiper-container swiper-container-v">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide box-1">
 				<h2 class = "box-1_header">Всегда ли цели терапии СД2<br>на поверхности</h1>
 					<div class = "box-1_point top_point">
-						<div class = "pulse-circle"></div>
+							<div class = "pulse_container">
+								<div class = "circle big_circle"></div>
+								<div class = "circle animation_circle big_circle"></div>
+								<div class = "circle animation_circle animation_delay big_circle"></div>
+							</div>
 						<span>Цель по HBA1C</span>
 					</div>
 					<div class = "box-1_point right_point">
-						<span>СС риски</span>
+							<span>СС риски</span>
+							<div class = "pulse_container">
+									<div class = "circle small_circle"></div>
+									<div class = "circle animation_circle small_circle"></div>
+									<div class = "circle animation_circle animation_delay small_circle"></div>
+							</div>
 					</div>
 					<div class = "box-1_point bottom_point">
 						<span>Осложнения СД</span>
+						<div class = "pulse_container">
+							<div class = "circle small_circle"></div>
+							<div class = "circle animation_circle small_circle"></div>
+							<div class = "circle animation_circle animation_delay small_circle"></div>
+						</div>
 					</div>
 					<div class = "box-1_point left_point">
 						<span>Гипергликемия</span>
+						<div class = "pulse_container">
+							<div class = "circle mid_circle"></div>
+							<div class = "circle animation_circle mid_circle"></div>
+							<div class = "circle animation_circle animation_delay mid_circle"></div>
+						</div>
 					</div>
 			</div>
 			<div class="swiper-slide slide-2">
@@ -42,15 +62,15 @@
 								<div class = "shceme_item">
 									<span>1</span>
 									<p>β-клетки</p>
-									<div class="circle one">
-										<img src="" alt="">
+									<div class="img_container one">
+										<span class = "beta">β</span>
 									</div>
 								</div>
 								<div class = "shceme_item">
 									<span>2</span>
 									<p>Мышцы</p>
-									<div class="circle two">
-										<img src="" alt="">
+									<div class="img_container two">
+										<img src="./img/musle.png" alt="" width="64.5px" height="42px">
 									</div>
 									</div>
 								<div class="square">
@@ -59,15 +79,15 @@
 								<div class = "shceme_item">
 									<span>3</span>
 									<p>Печень</p>
-									<div class="circle three">
-										<img src="" alt="">
+									<div class="img_container three">
+										<img src="./img/Capa 1.png" alt="" width="67px" height="53.5px">
 									</div>
 								</div>
-								<div class="arrow"></div>
-								<div class="arrow"></div>
-								<div class="arrow"></div>
-								<div class="arrow"></div>
-								<div class="arrow"></div>
+								<div class="arrow w"></div>
+								<div class="arrow e"></div>
+								<div class="arrow s"></div>
+								<div class="arrow arrow1 se"></div>
+								<div class="arrow arrow1 sw"></div>
 							</div>
 						</div>
 						<div class="swiper-slide slide-3-2">Slide 4</div>
@@ -75,19 +95,24 @@
 					</div>
 				</div>
 			</div>
-			<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
 	</div>
-	<div id="range_slider" class="range_slider">
-		<img class = "thumb" src="./img/thumb.png" alt="thumb" width="87px" height="111px">
-		<div class="point first"></div>
-		<div class="point second"></div>
-		<div class="point third"></div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+	<div class = "input_container">
+		<input id = "range2" class = "thumb" type = "range" min = "0" max = "100">
 	</div>
 </div>
+
 <script src = "./js/swiper.js"></script>
 <script src = "./js/script.js"></script>
 <script src= "./js/range_slider.js"></script>
-<script src = "./js/touch.js"></script>
+<script type="text/javascript" >
+	// $('input[type="range"]').on('input', function () {
+	// 	var percent = Math.ceil(((this.value - this.min) / (this.max - this.min)) * 100);
+	// 	console.log(this.min);
+	// 	$(this).css('background', '-webkit-linear-gradient(left, green 0%, green ' + percent + '%, black ' + percent + '%)');
+	// });
+</script>
+<!-- <script src = "./js/touch.js"></script> -->
  </body>
 </html>
