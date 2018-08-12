@@ -4,20 +4,17 @@
   <meta charset="utf-8" />
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
   <link rel = "stylesheet" href = "./css/style.css">
-  <link rel = "stylesheet" href = "./css/swiper.css"> 
+  <link rel = "stylesheet" href = "./css/swiper.css">
+  <link rel="stylesheet" href="./font/font.css">
  </head>
  <body> 
 		
 	<div class="swiper-container swiper-container-v">
 		<div class="swiper-wrapper">
-			<div class="swiper-slide box-1">
-				<h2 class = "box-1_header">Всегда ли цели терапии СД2<br>на поверхности</h1>
-					<div class = "box-1_point top_point">
+			<div class="swiper-slide slide-1">
+				<h2 class = "slide-1_header">Всегда ли цели терапии СД2<br>на поверхности</h1>
+					<div class = "slide-1_point top_point">
 							<div class = "pulse_container">
 								<div class = "circle big_circle"></div>
 								<div class = "circle animation_circle big_circle"></div>
@@ -25,7 +22,7 @@
 							</div>
 						<span>Цель по HBA1C</span>
 					</div>
-					<div class = "box-1_point right_point">
+					<div class = "slide-1_point right_point">
 							<span>СС риски</span>
 							<div class = "pulse_container">
 									<div class = "circle small_circle"></div>
@@ -33,7 +30,7 @@
 									<div class = "circle animation_circle animation_delay small_circle"></div>
 							</div>
 					</div>
-					<div class = "box-1_point bottom_point">
+					<div class = "slide-1_point bottom_point">
 						<span>Осложнения СД</span>
 						<div class = "pulse_container">
 							<div class = "circle small_circle"></div>
@@ -41,7 +38,7 @@
 							<div class = "circle animation_circle animation_delay small_circle"></div>
 						</div>
 					</div>
-					<div class = "box-1_point left_point">
+					<div class = "slide-1_point left_point">
 						<span>Гипергликемия</span>
 						<div class = "pulse_container">
 							<div class = "circle mid_circle"></div>
@@ -51,7 +48,7 @@
 					</div>
 			</div>
 			<div class="swiper-slide slide-2">
-				<h2 class = "slide-2_header">Основа терапии -<br> патогенез СД2</h1>
+				<h2 class = "slide-2_header">Основа терапии —<br> патогенез СД2</h1>
 			</div>
 			<div class="swiper-slide">
 				<div class="swiper-container swiper-container-h">
@@ -59,14 +56,14 @@
 						<div class="swiper-slide slide-3-1">
 							<h2 class="slide-3-1_header">Звенья патогенеза СД2</h1>
 							<div class="slide-3-1_scheme">
-								<div class = "shceme_item">
+								<div class = "scheme_item">
 									<span>1</span>
 									<p>β-клетки</p>
 									<div class="img_container one">
 										<span class = "beta">β</span>
 									</div>
 								</div>
-								<div class = "shceme_item">
+								<div class = "scheme_item">
 									<span>2</span>
 									<p>Мышцы</p>
 									<div class="img_container two">
@@ -76,7 +73,7 @@
 								<div class="square">
 									<p>Гипергликемия</p>
 								</div>
-								<div class = "shceme_item">
+								<div class = "scheme_item">
 									<span>3</span>
 									<p>Печень</p>
 									<div class="img_container three">
@@ -90,8 +87,239 @@
 								<div class="arrow arrow1 sw"></div>
 							</div>
 						</div>
-						<div class="swiper-slide slide-3-2">Slide 4</div>
-						<div class="swiper-slide slide-3-3">Slide 5</div>
+						<div class="swiper-slide slide-3-2">
+							<h2 class="slide-3-2_header">Смертельный октет</h2>
+							<div class ="slide-3-2_scheme">
+								<div class = row>
+								<div class = "scheme_item row_dir">
+									<p>Инкретиновый<br>эффект</p>
+									<div class="img_container">
+										<span class = "number_two">2</span>
+									</div>
+								</div>
+
+								<div class = "scheme_item">
+									<span>1</span>
+									<p>β-клетки</p>
+									<div class="img_container">
+										<span class = "beta">β</span>
+									</div>
+								</div>
+								
+								<div class = "scheme_item row_dir">
+									<div class="img_container">
+										<span class = "number_three">3</span>
+									</div>
+									<p>Дефект α-клеток</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class = "scheme_item row_dir">
+									<div class = "text_column end">
+									<span>8</span>
+									<p>Почки</p>
+									</div>
+									<div class="img_container">
+										<img src="./img/bud.png" alt="" width="45px" height="45px">
+									</div>
+								</div>
+
+								<div class="square">
+									<p>Гипергликемия</p>
+								</div>
+
+								<div class = "scheme_item row_dir">
+									<div class="img_container">
+										<img src="./img/lipid.png" alt="" width="45px" height="45px">
+									</div>
+									<div class = "text_column start">
+									<span>4</span>
+									<p>Жировые<br>клетки</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class = "scheme_item">
+									<div class="img_container">
+										<img src="./img/brain-2.png" alt="" width="45px" height="45px">
+									</div>
+									<span>7</span>
+									<p>Головной<br>мозг</p>
+								</div>
+
+								<div class = "scheme_item">
+									<div class="img_container">
+										<img src="./img//Capa 1.png" alt="" width="45px" height="45px">
+									</div>
+									<span>6</span>
+									<p>Печень</p>
+								</div>
+
+								<div class = "scheme_item">
+									<div class="img_container">
+										<img src="./img/musle.png" alt="" width="45px" height="45px">
+									</div>
+									<span>5</span>
+									<p>Мышцы</p>
+								</div>
+							</div>
+							<div class = "slide-3-2_arrows">
+							<div class="arrow arrow2 s"></div>
+							<div class="arrow arrow2 s"></div>
+							<div class="arrow arrow2 s"></div>
+							<div class="arrow arrow2 n"></div>
+							<div class="arrow arrow2 n"></div>
+							<div class="arrow arrow2 n"></div>
+							<div class="arrow arrow2 w"></div>
+							<div class="arrow arrow2 e"></div>
+							</div>
+							</div>
+						</div>
+						<div class="swiper-slide slide-3-3">
+							<h2 class="slide-3-3_header">Звенья патогенеза СД2</h1>
+								<div class="slide-3-3_scheme">
+									<div class="column end">
+										<div class = "scheme_item row_dir">
+											<div class="text_column end">
+												<span>8</span>
+												<p>Микрофлора<br>кишечника</p>
+											</div>
+											<div class="img_container">
+												<img src="./img/mirkoflora.png" alt="" width="45px" height="60px">
+											</div>
+										</div>
+
+										<div class = "scheme_item row_dir">
+											<div class = "text_column end">
+												<span>9</span>
+												<p style="width:218px">Нарушение иммуной<br>регуляции/воспаление</p>
+											</div>
+											<div class="img_container">
+												<img src="./img/infection.png" alt="" width="45px" height="45px" style = "margin-right: 3px">
+											</div>
+										</div>
+
+										<div class="scheme_item small">
+											<small>↓ амилин</small>
+										</div>
+
+										<div class = "scheme_item row_dir">
+											<div class="text_column end">
+												<span>10</span>
+												<p>Желудок</p>
+											</div>
+											<div class="img_container">
+												<img src="./img/stomach.png" alt="" width="45px" height="45px">
+											</div>
+										</div>
+									</div>
+									<div class="column center">
+										<div class = "scheme_item">
+											<div class="text_row center">
+												<span>1</span>
+												<p>β-клетки</p>
+											</div>
+											<div class="img_container big">
+												<span class = "beta">β</span>
+											</div>
+										</div>
+										
+										<div class="row">
+										<div class = "scheme_item end">
+											<span>2</span>
+											<p class = "item_2_arrow">инкретинового<br>эффекта</p>
+										</div>
+
+										<div class = "scheme_item start">
+											<span>3</span>
+											<p style= "white-space: nowrap">Дефект α-клеток</p>
+											<small class="item_3_arrow">глюкагон</small>
+										</div>
+										</div>
+
+										<div class = "scheme_item">
+											<span>Гипергликемия</span>
+										</div>
+
+										<div class = "scheme_item row_dir">
+											<div class="text_column end">
+												<span>11</span>
+												<p>Почки</p>
+											</div>
+											<div class="img_container">
+												<img src="./img/bud.png" alt="" width="45px" height="45px" style="margin-right: 10px">
+											</div>
+										</div>
+
+									</div>
+									<div class="column start">
+										<div class = "scheme_item row_dir">
+											<div class="img_container">
+												<img src="./img/brain-2.png" alt="" width="45px" height="45px">
+											</div>
+											<div class="text_column start">
+												<span>7</span>
+												<p>Головной мозг</p>
+											</div>
+										</div>
+
+										<div class="column scheme_item_group">
+											<span>Инсулинорезистентность</span>
+											<div class="scheme_item row_dir">
+												<div class="img_container">
+													<img src="./img/Capa 1.png" alt="" width="45px" height="45px">
+												</div>
+												<div class="text_column start">
+													<span>6</span>
+													<p>Печень</p>
+												</div>
+											</div>
+											<div class="scheme_item row_dir">
+												<div class="img_container">
+													<img src="./img/musle.png" alt="" width="45px" height="45px">
+												</div>
+												<div class="text_column start">
+													<span>5</span>
+													<p>Мышцы</p>
+												</div>
+											</div>
+											<div class="scheme_item row_dir">
+												<div class="img_container">
+													<img src="./img/lipid.png" alt="" width="45px" height="45px">
+												</div>
+												<div class="text_column start">
+													<span>4</span>
+													<p style="white-space: nowrap">Жировые клетки</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slide-3-3_arrows">
+										<div class="arrow arrow-3-1 left top"></div>
+										<div class="arrow arrow-3-1 left bottom"></div>
+										<div class="arrow arrow-3-1 right top"></div>
+										<div class="arrow arrow-3-1 right bottom"></div>
+										<div class="arrow arrow-3-2 left top"></div>
+										<div class="arrow arrow-3-2 left bottom"></div>
+										<div class="arrow arrow-3-2 right top"></div>
+										<div class="arrow arrow-3-2 right bottom"></div>
+										<div class="arrow arrow-3-3 left s"></div>
+										<div class="arrow arrow-3-3 middle s"></div>
+										<div class="arrow arrow-3-3 right s"></div>
+										<div class="arrow arrow-3-4 left s"></div>
+										<div class="arrow arrow-3-4 right s small"></div>
+										<div class="arrow arrow-3-4 right s"></div>
+										<div class="arrow arrow-3-5 left n"></div>
+										<div class="arrow arrow-3-5 right s"></div>
+										<div class="arrow arrow-3-6 left"></div>
+										<div class="arrow arrow-3-6 right"></div>
+										<div class="arrow arrow-3-6 bottom"></div>
+										<div class="arrow arrow-3-6 small s"></div>
+										<div class="arrow arrow-3-7 left n"></div>
+										<div class="arrow arrow-3-7 right s"></div>
+									</div>
+								</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -99,20 +327,18 @@
 	<!-- Add Pagination -->
 	<div class="swiper-pagination"></div>
 	<div class = "input_container">
-		<input id = "range2" class = "thumb" type = "range" min = "0" max = "100">
+		<input class = "slider_input" type = "range" min = "0" max = "100" ontouchstart = "return false">
+		<div class = "thumb-image"></div>
+		<div class="dates_container">
+			<span>1988</span>
+			<span>2009</span>
+			<span>2016</span>
+		</div>
 	</div>
 </div>
 
 <script src = "./js/swiper.js"></script>
 <script src = "./js/script.js"></script>
-<script src= "./js/range_slider.js"></script>
-<script type="text/javascript" >
-	// $('input[type="range"]').on('input', function () {
-	// 	var percent = Math.ceil(((this.value - this.min) / (this.max - this.min)) * 100);
-	// 	console.log(this.min);
-	// 	$(this).css('background', '-webkit-linear-gradient(left, green 0%, green ' + percent + '%, black ' + percent + '%)');
-	// });
-</script>
-<!-- <script src = "./js/touch.js"></script> -->
+<script src = "./js/touch.js"></script>
  </body>
 </html>

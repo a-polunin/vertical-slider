@@ -13,3 +13,9 @@ const swiperH = new Swiper(".swiper-container-h",{
 });
 
 swiperH.slideTo(0);
+
+const rangeSliderContainer = document.querySelector(".input_container")
+swiperV.on("slideChange",function(){
+	swiperV.realIndex == 2 ? rangeSliderContainer.style.visibility = "visible" : 
+							 rangeSliderContainer.style.visibility = "hidden";
+})
